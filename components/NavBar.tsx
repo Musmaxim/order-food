@@ -9,12 +9,12 @@ const NavBar = () => {
   return (
     <div className="h-12 text-red-500 p-2 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:px-5 xl:px-15">
       <div className="hidden md:flex gap-4 flex-1">
-        <Link href="/">Главная</Link>
-        <Link href="/menu">Меню</Link>
-        <Link href="/">Контакты</Link>
+        <Link href="/">Main</Link>
+        <Link href="/menu">Menu</Link>
+        <Link href="/">Contacts</Link>
       </div>
       <div className="text-xl md:font-bold flex-1 md:text-center">
-        <Link href="/">Вкусно и ладно!</Link>
+        <Link href="/">massimo</Link>
       </div>
       <div className="md:hidden">
         <Menu />
@@ -25,9 +25,9 @@ const NavBar = () => {
           <span>123 45 67</span>
         </div>
         {!user ? (
-          <Link href="/profile">Профиль</Link>
+          <Link href="/profile">Profile</Link>
         ) : (
-          <Link href="/orders">Заказы</Link>
+          <Link href="/orders">Orders</Link>
         )}
         <CartIcon />
       </div>

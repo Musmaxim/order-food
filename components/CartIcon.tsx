@@ -8,7 +8,7 @@ const CartIcon = () => {
         <div className='relative w-8 h-8 md:h-5 md:w-5'>
             <Image src='/cart.png' alt='корзина' fill />
         </div>
-        <span>Корзина (3)</span>
+        <span>Cart (3)</span>
     </Link>
   )
 }

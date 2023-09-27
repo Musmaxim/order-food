@@ -6,17 +6,17 @@ import React, { useEffect, useState } from "react";
 const data = [
   {
     id: 1,
-    title: "всегда свежее, всегда горячее",
+    title: "always fresh & always crispy & always hot",
     image: "/slide1.png",
   },
   {
     id: 2,
-    title: "доставим в любой район города",
+    title: "we deliver your order wherever you are in NY",
     image: "/slide2.png",
   },
   {
     id: 3,
-    title: "лучшая пицца для любой вечеринки",
+    title: "the best pizza to share with your family",
     image: "/slide3.jpg",
   },
 ];
@@ -39,7 +39,9 @@ const Slider = () => {
         <h1 className="text-4xl text-center uppercase p-4 md:p-10 md:text-5xl xl:text-6xl">
           {data[currentSlide].title}
         </h1>
-        <button className="bg-red-500 text-white py-4 px-8 rounded-md">Заказать</button>
+        <button className="bg-red-500 text-white py-4 px-8 rounded-md">
+          Order now
+        </button>
       </div>
       <div className="w-full flex-1 relative">
         <Image

@@ -28,7 +28,7 @@ const Featured = () => {
               {item.desc && <p className="p-4 2xl:p-8">{item.desc}</p>}
               <span>${item.price}</span>
               <button className="bg-red-500 text-white p-2 rounded-md">
-                В корзину
+                Cart
               </button>
             </div>
           </div>

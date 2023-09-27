@@ -43,11 +43,11 @@ const Menu = () => {
         ))}
         {!user ? (
           <Link href="/login" onClick={() => setOpen(false)}>
-            Профиль
+            Profile
           </Link>
         ) : (
           <Link href="/orders" onClick={() => setOpen(false)}>
-            Заказы
+            Orders
           </Link>
         )}
         <Link href="/cart" onClick={() => setOpen(false)}>
