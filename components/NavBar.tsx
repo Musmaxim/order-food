@@ -3,9 +3,9 @@ import React from "react";
 import Menu from "./Menu";
 import CartIcon from "./CartIcon";
 import Image from "next/image";
+import UserLinks from "./UserLinks";
 
 const NavBar = () => {
-  const user = false;
   return (
     <div className="h-12 text-red-500 p-2 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:px-5 xl:px-15">
       <div className="hidden md:flex gap-4 flex-1">
@@ -24,11 +24,7 @@ const NavBar = () => {
           <Image src="/phone.png" alt="Номер телефона" width={20} height={20} />
           <span>123 45 67</span>
         </div>
-        {!user ? (
-          <Link href="/profile">Profile</Link>
-        ) : (
-          <Link href="/orders">Orders</Link>
-        )}
+        <UserLinks />
         <CartIcon />
       </div>
     </div>
